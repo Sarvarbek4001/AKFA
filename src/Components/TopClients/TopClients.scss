@@ -1,0 +1,71 @@
+.top__clients{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(62, 200, 136, 0.24);
+    border-radius: 30px;
+    padding: 20px;
+    width: 590px;
+    margin-bottom: 20px;
+    &--hero{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 16px;
+    }
+    &--export{
+        display: flex;
+        align-items: center;
+    }
+    &--scal{
+        margin-left: 23px;
+    }
+    &--data{
+        max-height: 320px;
+        overflow: auto;
+    }
+    &--head{
+        display: flex;
+        align-items:center;
+    }
+    &--head::before{
+        content: "";
+        display: inline-block;
+        width:12px;
+        height:12px;
+        background-image: url("../../Assets/images/icon-head.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 4px;
+    }
+    &--table{
+        width: 100%;
+        border-collapse: collapse;
+        & th{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: #2D7553;
+            text-align: left;
+            padding:11.5px 10px 11.5px 16px;
+            
+        }
+        
+        & td{
+            font-size: 14px;
+            line-height: 143%;
+            letter-spacing: 0.15px;
+            color: #000000;
+            padding:11.5px 10px 11.5px 16px;
+        }
+    }
+}
+tbody tr:hover{
+    background: rgba(62, 200, 136, 0.12);
+    border-radius: 50px;
+}
+
+@media only screen and (max-width:767px){
+    .top__clients{
+        width: 100%;
+    }
+}

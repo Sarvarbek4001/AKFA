@@ -1,0 +1,78 @@
+.table{
+    margin-bottom: 20px;
+    width: 100%; 
+    border-collapse: collapse;
+    &__section{
+        margin-top: 20px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        box-shadow: 0px 4px 24px rgba(62, 200, 136, 0.24);
+        padding-top: 16px;
+        padding-bottom: 31px;
+    }  
+    & th{
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.15px;
+        color: #2D7553;
+        text-align: start;
+        padding-bottom: 16px;
+        padding-left:16px;
+        padding-right:17px;
+    }
+    & td{
+        font-size: 14px;
+        letter-spacing: 0.15px;
+        color: rgba(0, 0, 0, 0.87);
+        padding-bottom: 11.5px;
+        padding-top: 11.5px;
+        padding-left:16px;
+        padding-right:17px;
+    }
+    &__contact_msg{
+        margin-left: 27px;
+        margin-right: 79px;
+        display: inline-block;
+    }
+    &__rows{
+        &--items{
+            display: flex;
+            justify-content: flex-end;
+            padding-left:16px;
+            padding-right:17px;
+            margin-right: 21px;
+        }
+        &--item{
+            display: flex;
+            align-items: center;
+        }
+       &--text{
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.4px;
+        color: rgba(0, 0, 0, 0.6);
+       }
+       &--select{
+           border: none;
+           outline: none;
+           margin-right: 33px;
+       }
+       &--number,&--all--data{
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.4px;
+        color: rgba(0, 0, 0, 0.87);
+       }
+       &--data--before{
+           margin-right: 41px;
+           margin-left: 46px;
+       }    
+    }
+}
+
+tbody tr:hover{
+    background: #E7F2F8;
+    border-radius: 8px;
+}
+
+

@@ -1,0 +1,22 @@
+.menu__items{
+    list-style: none;
+    background: rgba(83, 202, 147, 0.2);
+    border-radius: 20px;
+   
+    display: flex;
+    justify-content:space-between;
+    width: 337px;
+}
+.menu__item{
+     &--link{
+         display: inline-block;
+         text-decoration: none;
+         padding: 2px 38.5px 2px 28px;
+     }
+     &--link:hover{
+         color: white;
+         border-radius: 20px;
+        background: #53CA93;
+        color: #FFFFFF;
+     }
+}

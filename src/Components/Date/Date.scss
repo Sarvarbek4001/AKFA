@@ -1,0 +1,30 @@
+.input__date{
+    outline: none;
+    border: none;
+    background-color: white;
+    padding:10px 20px;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width:180px;
+}
+.date-items{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height:40px;
+}
+.date-picker{
+    content: "";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background-image: url("../../Assets/images/date.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 7px;
+    right:20px;
+}
+.date-picker-hide{
+    display: none;
+}

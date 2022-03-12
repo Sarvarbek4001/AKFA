@@ -1,0 +1,11 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:767px){
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+}

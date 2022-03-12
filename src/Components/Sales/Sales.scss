@@ -1,0 +1,35 @@
+.progress {
+	background-color: white;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	width: 332px;
+}
+.progress-done {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgba(255, 255, 255, 0.9);
+	background: #2D7453;;
+	border-radius: 39px;
+    padding:6px 13px 6px 0;
+	width: 0;
+	opacity: 0;
+	transition: 3s ease 0.3s;
+}
+.sell__section--items{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 28px;
+    margin-top: 10px;
+}
+.progress__price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #37A672;
+}

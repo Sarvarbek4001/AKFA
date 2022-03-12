@@ -1,0 +1,12 @@
+
+
+.the__best--rise::before{
+    content: "";
+    display: inline-block;
+    width:12px;
+    height:12px;
+    background-image: url("../../Assets/images/rise.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+}

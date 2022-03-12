@@ -1,0 +1,190 @@
+.navbar{
+    background: linear-gradient(90deg, #246253 10.68%, #697E75 94.84%);
+    padding-top: 13px;
+    padding-bottom: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icon{
+        display: flex;
+        align-items:center;
+    }
+    &__items{
+        list-style: none;
+        display: flex;
+        margin-left: 40px;
+    }
+    &__item{
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+         &::before{
+            content: " ";
+            display: inline-block;
+            width: 22px;
+            height: 20px;
+            margin-right: 10px;
+            background-repeat: no-repeat;
+            background-size: contain; 
+         }
+         &:nth-child(1)::before{
+            background-image: url("../../Assets/images/side1.svg");
+         }
+         &:nth-child(2)::before{
+            background-image: url("../../Assets/images/side2.svg");
+         }   
+         &:nth-child(3)::before{
+            background-image: url("../../Assets/images/side3.svg");
+         }
+         &:nth-child(4)::before{
+            background-image: url("../../Assets/images/side4.svg");
+         }
+        &:last-child{
+            margin-right:0
+        }
+       
+        &--link{
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.15px;
+            color: #FFFFFF;
+            opacity: 0.9;
+
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 0.5px;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    &__profil{
+         &--text{
+            font-size: 16px;
+            line-height: 175%;
+            letter-spacing: 0.15px;
+            color: #FFFFFF;
+             display: flex;
+             align-items:center;
+         }
+         &--text::after{
+             content: " ";
+             display: inline-block;
+             width: 40px;
+             height: 40px;
+             background-image: url("../../Assets/images/profil.png");
+             background-repeat: no-repeat;
+             background-size: contain;
+             border-radius: 50%;
+             margin-left: 10px;
+         }
+    }
+}
+
+
+.hamburger-menu {
+    display: inline-block;
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+  }
+  .hamburger-menu::before,
+  .hamburger-menu::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 3px;
+      background-color: white;
+      position: absolute;
+    }
+    .hamburger-menu::before {
+        top: -5px;
+    }
+    .hamburger-menu::after {
+        top: 5px;
+    }
+    .input {
+        display: none;
+    }
+    .label {
+      display: none;
+    }
+    .modal{
+        display: none;
+    }
+    .open-modal{
+        display: block;
+    }
+
+   
+@media only screen and (max-width:767px){
+    .navbar__items{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .navbar__profil{
+        display: none;
+    }
+    .label {
+        display: block;
+      }
+
+    .input:checked+.label .hamburger-menu {
+        visibility: hidden;
+      }
+    
+      .input:checked+.label .hamburger-menu::after,
+      .input:checked+.label .hamburger-menu::before {
+        visibility: visible;
+        top: 0;
+      }
+    
+      .input:checked+.label .hamburger-menu::after {
+        transform: rotate(135deg);
+      }
+    
+      .input:checked+.label .hamburger-menu::before {
+        transform: rotate(-135deg);
+      }
+
+
+    //  Modal
+    .modal{
+        padding: 20px;
+    }
+    
+    .modal--navbar__items{
+       display: flex;
+       flex-direction: column;
+       align-items:center;
+    }
+    .navbar__item{
+        margin-right: 0;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &--link{
+            font-weight: 100;
+            font-size: 24px;
+            line-height: 19px;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+            opacity: 0.9;
+        }
+    }
+}
+
+
+

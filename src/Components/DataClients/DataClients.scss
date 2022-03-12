@@ -1,0 +1,14 @@
+.data__clients--table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data__clients-row:hover{
+    background-color:white;
+}
+.data__clients-row:active{
+    background-color:red;
+}
+.data__clients-row table tr:hover{
+    background-color:white;
+}
