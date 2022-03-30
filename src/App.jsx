@@ -13,22 +13,21 @@ import { Dataclients } from './Components/DataClients/DataClients';
 import { Clients } from './Pages/Clients/Clients';
 import { Home } from './Pages/Home/Home';
 import {Routes,Route} from "react-router-dom";
-import { NumberOfClientsChart } from './Components/NumberOfClientsChart/NumberOfClientsChart';
-import { Sales } from './Components/Sales/Sales';
-import { TotalSales } from './Components/TotalSales/TotalSales';
+
+
+import SalesStatistics from './Components/SalesStatistics/SalesStatistics';
+import Profile from './Pages/Profile/Profile';
+import StatisticsPieChart from './Components/StatisticsPieChart/StatisticsPieChart';
+import Stock from './Pages/Stock/Stock';
 function App() {
 	return (
 		<div className='App'>
 			<Navbar />
 			<Routes>
 				<Route path='/' element={<Home/>}/>
-				<Route path='/profile' element={<div className='container'>
-					<Sales/>
-					<TotalSales/>
-					
-					</div>}/>
+				<Route path='/profile' element={<Profile/>}/>
 				<Route path='/clients' element={<Clients/>}/>
-				<Route path='/stock' element={<div className='container'>Stock page</div>}/>
+				<Route path='/stock' element={<Stock/>}/>
 			</Routes>
 		</div>
 	);

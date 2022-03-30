@@ -5,8 +5,6 @@ import { Locations } from '../../Components/Locations/Locations'
 import { Sendbtn } from '../../Components/SendBtn/SendBtn'
 import { Datatable } from '../../Components/DataTable/DataTable'
 export function Clients(props) {
-    
-
     return (
         <div className='container'>
                 <div className="intro__section ">

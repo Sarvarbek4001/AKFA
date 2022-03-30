@@ -2,7 +2,6 @@ import React from 'react'
 import { Sendbtn } from '../SendBtn/SendBtn'
 import Scal from "../../Assets/images/scal.svg"
 export function Numberofclients(props) {
-    
 
     return (
         <>

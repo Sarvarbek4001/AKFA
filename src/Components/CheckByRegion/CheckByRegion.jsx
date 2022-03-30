@@ -67,6 +67,27 @@ export function Checkbyregion(props) {
                                     <td>46</td>
                                     <td>4</td>
                             </tr>
+                            <tr className='rows the__best--rows'>
+                                    <td >Навои</td>
+                                    <td >42</td>
+                                    <td >64</td>
+                                    <td>46</td>
+                                    <td>4</td>
+                            </tr>
+                            <tr className='rows the__best--rows'>
+                                    <td >Навои</td>
+                                    <td >42</td>
+                                    <td >64</td>
+                                    <td>46</td>
+                                    <td>4</td>
+                            </tr>
+                            <tr className='rows the__best--rows'>
+                                    <td >Навои</td>
+                                    <td >42</td>
+                                    <td >64</td>
+                                    <td>46</td>
+                                    <td>4</td>
+                            </tr>
                             </tbody>
                     </table>
                  </div>

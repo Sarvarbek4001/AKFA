@@ -13,7 +13,7 @@ export function Sales(props) {
 	}, 200);
     return (
         <>
-            <div className="container">
+            <div className="">
             <div className="top__clients">
                  <div className="top__clients--hero">
                         <h2 className="top__clients--heading">Топ регионов по продажам</h2>

@@ -5,6 +5,7 @@ import { Topclients } from '../../Components/TopClients/TopClients';
 import { Thebestclients } from '../../Components/TheBestClients/TheBestClients';
 import { Returnclients } from '../../Components/ReturnClients/ReturnClients';
 import { Filteritem } from '../../Components/FilterItem/FilterItem';
+import SalesCharts from '../../Components/SalesCharts/SalesCharts';
 export function Home(props) {
     return (
         <>
@@ -13,7 +14,7 @@ export function Home(props) {
                  <div className="home">      
                     <div className="home__left">
                         <Statistictoday/>
-                        <Returnclients/>
+                        <SalesCharts/>
                         <Returnclients/>
                     </div>
                     <div className="home__right">
